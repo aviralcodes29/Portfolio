@@ -33,10 +33,12 @@ This portfolio was created as a beginner-friendly frontend project with a modern
 ## Files Included
 
 ```bash
-index.html
-style.css
-script.js
-README.md
+portfolio-website/
+│── index.html
+│── style.css
+│── script.js
+│── README.md
+│── Aviral_Singh_Resume.pdf   # optional
 ```
 
 ## Website Sections
@@ -147,4 +149,4 @@ Looking for Web Development and General Technology internships
 
 ## License
 
-This project may be used and modified for personal and educational purposes.
+This project is free to use for personal portfolio purposes.
