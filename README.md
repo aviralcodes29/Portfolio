@@ -1,161 +1,150 @@
-# Aviral Singh Portfolio Website
+# Personal Portfolio Website
 
-A modern, responsive personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.
+A clean and modern personal portfolio website built with **HTML5**, **CSS3**, and **Vanilla JavaScript**.
 
-This project is designed to showcase Aviral Singh's profile, skills, projects, experience, and contact information in a clean dark-themed interface. The site includes smooth scrolling, a mobile hamburger menu, scroll reveal animations, project filtering, a typing effect in the hero section, a back-to-top button, and a contact form UI with client-side validation.
+This project presents the profile of **Aviral Singh**, a B.Tech CSE student specializing in AI-ML, and is designed to showcase skills, projects, experience, and internship goals in a professional and responsive format.
 
-## Features
+## Overview
 
-- Modern dark-themed UI
-- Fully responsive design for mobile, tablet, and desktop
+This portfolio was created as a beginner-friendly frontend project with a modern dark theme and interactive UI elements. It is suitable for students, freshers, and aspiring developers who want to create a strong online presence for internships, hackathons, or personal branding.
+
+## Highlights
+
+- Responsive one-page layout
+- Dark modern interface
 - Smooth scrolling navigation
-- Mobile hamburger menu
-- Hero section with typing animation
-- About, Skills, Projects, Experience, and Contact sections
-- Project filter buttons
+- Mobile-friendly hamburger menu
+- Hero section with animated typing text
+- Skills and project showcase
+- Project category filtering
+- Experience and hackathon section
+- Contact cards and contact form
 - Resume download button
 - Back-to-top button
-- Scroll reveal animations using JavaScript
-- Contact form with basic validation
-- Beginner-friendly file structure
+- Scroll reveal animations
 
-## Project Structure
+## Tech Stack
+
+- **HTML5** for page structure
+- **CSS3** for styling and responsiveness
+- **JavaScript** for interactivity
+- **Google Fonts** for typography
+
+## Files Included
 
 ```bash
-portfolio-website/
-│── index.html
-│── style.css
-│── script.js
-│── README.md
-│── Aviral_Singh_Resume.pdf   # optional
+index.html
+style.css
+script.js
+README.md
 ```
 
-## Technologies Used
+## Website Sections
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
-- Google Fonts
+### Hero
+Contains the name, role animation, short introduction, and main action buttons.
 
-## Sections Included
+### About
+Describes background, goals, and learning mindset.
 
-### 1. Hero Section
-Displays name, intro, typing animation, and action buttons.
+### Skills
+Displays technical skills and tools in a responsive card layout.
 
-### 2. About Section
-Introduces profile, career goals, and mindset.
+### Projects
+Shows featured projects with tags and category-based filtering.
 
-### 3. Skills Section
-Shows technical skills and tools.
+### Experience
+Highlights hackathon participation and personal strengths like teamwork, collaboration, innovation, and problem-solving.
 
-### 4. Projects Section
-Highlights selected projects with filter categories.
+### Contact
+Includes GitHub, LinkedIn, email, portfolio placeholders, and a simple contact form.
 
-### 5. Experience & Activities Section
-Includes hackathon participation and soft-skill highlights.
+## Key JavaScript Features
 
-### 6. Contact Section
-Provides social/contact links and a contact form.
+The JavaScript file adds interactive behavior such as:
 
-## How to Use
+- Opening and closing the mobile menu
+- Highlighting the active navigation link on scroll
+- Typing animation in the hero section
+- Scroll-based reveal effects
+- Project card filtering
+- Back-to-top button visibility
+- Sticky header hide/show on scroll
+- Contact form validation
 
-1. Download or copy the project files.
-2. Save them in the same folder:
+## Getting Started
+
+To run this project locally:
+
+1. Create a project folder.
+2. Add the following files inside it:
    - `index.html`
    - `style.css`
    - `script.js`
-3. Open `index.html` in your browser.
-4. Customize the content with your real:
-   - GitHub link
-   - LinkedIn link
-   - Email address
-   - Portfolio link
-   - Resume PDF file
+3. Open `index.html` in any web browser.
 
-## Customization
+No frameworks, build tools, or package installations are required.
 
-### Update Personal Information
-Edit the text inside `index.html` to update:
-- Name
-- About section
-- Skills
-- Projects
-- Experience
-- Contact details
+## Customization Guide
 
-### Update Resume Button
-Place your resume file in the same project folder and name it:
+You can personalize this portfolio by editing the content in `index.html`.
+
+### Update the following:
+
+- Name and introduction
+- Skills list
+- Project titles and descriptions
+- Experience details
+- Contact links
+- Resume file
+
+### Resume Button
+If you want the download button to work, place your resume in the project folder and use the same file name:
 
 ```bash
 Aviral_Singh_Resume.pdf
 ```
 
-Or update the file name in this line inside `index.html`:
+Or change the file path in the resume button link.
 
-```html
-<a href="Aviral_Singh_Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
-```
+## Deployment Options
 
-### Update Contact Links
-Replace placeholder links in the Contact section:
+You can host this portfolio on:
 
-```html
-https://github.com/yourusername
-https://linkedin.com/in/yourusername
-mailto:yourmail@example.com
-https://yourportfolio.com
-```
+- **GitHub Pages**
+- **Netlify**
+- **Vercel**
 
-## JavaScript Functionalities
+These platforms are beginner-friendly and work well for static portfolio websites.
 
-The `script.js` file handles:
+## Best Use Case
 
-- Mobile menu open/close
-- Active navigation highlight on scroll
-- Scroll reveal animation
-- Hero typing animation
-- Project filtering
-- Back-to-top button visibility
-- Header hide/show on scroll
-- Contact form validation
+This project is ideal for:
 
-## Responsive Design
+- Student portfolios
+- Internship applications
+- Personal branding
+- Hackathon presentations
+- Frontend practice projects
 
-The layout is optimized for:
+## Future Enhancements
 
-- Mobile phones
-- Tablets
-- Laptops
-- Desktop screens
+Some useful improvements you can add later:
 
-Media queries are used in `style.css` to adjust layout, spacing, grids, and navigation for smaller screens.
-
-## Deployment
-
-This website can be deployed easily on:
-
-- GitHub Pages
-- Vercel
-- Netlify
-
-## Future Improvements
-
-Possible next upgrades:
-
-- Light/Dark theme toggle
+- Light and dark theme toggle
+- Real backend/contact email integration
 - Project popup modals
-- Real working contact form using EmailJS or Formspree
-- Animations with GSAP
-- Certificates section
-- Achievements section
-- Blog section
+- Skills progress bars
+- Certificate section
+- Blog or articles section
+- Animated counters
 
 ## Author
 
 **Aviral Singh**  
 B.Tech CSE Student (AI-ML)  
-Aspiring Web Developer and Technology Intern
+Looking for Web Development and General Technology internships
 
 ## License
 
-This project is free to use for personal portfolio purposes.
+This project may be used and modified for personal and educational purposes.
