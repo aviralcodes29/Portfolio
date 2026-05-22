@@ -27,8 +27,6 @@ portfolio-website/
 │── style.css
 │── script.js
 │── README.md
-│── Aviral_Singh_Resume.pdf   # optional
-```
 
 ## Technologies Used
 
