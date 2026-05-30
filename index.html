@@ -42,17 +42,27 @@
         </ul>
       </nav>
 
-      <button
-        class="menu-toggle"
-        id="menu-toggle"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        aria-controls="nav-menu"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="header-actions">
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle dark/light mode"
+          title="Toggle Theme"
+        >
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -218,6 +228,7 @@
               <span>CSS</span>
               <span>JavaScript</span>
             </div>
+            <button class="project-view-btn" data-project="01">View Details</button>
           </article>
 
           <article class="project-card reveal" data-category="web college">
@@ -232,6 +243,7 @@
               <span>Portal</span>
               <span>Problem Solving</span>
             </div>
+            <button class="project-view-btn" data-project="02">View Details</button>
           </article>
 
           <article class="project-card reveal" data-category="web college">
@@ -246,6 +258,7 @@
               <span>CSS</span>
               <span>Responsive</span>
             </div>
+            <button class="project-view-btn" data-project="03">View Details</button>
           </article>
         </div>
       </div>
@@ -306,7 +319,7 @@
         <div class="contact-wrapper reveal">
           <div class="contact-text">
             <p class="section-tag">Contact</p>
-            <h2>Let’s connect for opportunities</h2>
+            <h2>Let's connect for opportunities</h2>
             <p>
               I am open to internships, collaborations, and networking opportunities in
               Web Development and General Technology roles.
@@ -365,6 +378,20 @@
       </div>
     </section>
   </main>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+      <div class="modal-body">
+        <div class="modal-project-number" id="modalProjectNumber"></div>
+        <h2 id="modalProjectTitle"></h2>
+        <div id="modalProjectDescription"></div>
+        <div class="modal-tech-stack" id="modalTechStack"></div>
+        <div class="modal-actions" id="modalActions"></div>
+      </div>
+    </div>
+  </div>
 
   <!-- Back To Top -->
   <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
