@@ -52,25 +52,25 @@ themeToggle.addEventListener("click", () => {
 const projectDetails = {
   "01": {
     title: "Calculator Application",
-    description: "A fully functional calculator application that performs arithmetic operations including addition, subtraction, multiplication, and division. Built from scratch using vanilla JavaScript with a clean and intuitive user interface. The project helped me practice DOM manipulation, event handling, and state management.",
+    description: "A fully functional calculator application that performs arithmetic operations including addition, subtraction, multiplication, and division. Built from scratch using vanilla JavaScript with a clean and intuitive user interface. The project helped me practice DOM manipulation, event handling, and state management. Features include real-time calculation display, error handling for invalid operations, and responsive button layout.",
     technologies: ["HTML5", "CSS3", "JavaScript", "DOM API"],
     links: [
-      { text: "View Code", url: "#", type: "primary" },
-      { text: "Live Demo", url: "#", type: "secondary" }
+      { text: "View Code", url: "https://github.com/aviralcodes29", type: "primary" },
+      { text: "GitHub Repo", url: "https://github.com/aviralcodes29", type: "secondary" }
     ]
   },
   "02": {
     title: "Lost and Found Item Portal",
-    description: "A web-based portal concept for reporting and tracking lost items in a community or campus. This project demonstrates my ability to conceptualize user problems and design solutions. The portal allows users to post lost items, search for found items, and connect with finders through contact information.",
+    description: "A web-based portal concept for reporting and tracking lost items in a community or campus. This project demonstrates my ability to conceptualize user problems and design solutions. The portal allows users to post lost items, search for found items, and connect with finders through contact information. Designed with user experience in mind, featuring intuitive navigation and clear categorization of items.",
     technologies: ["Web Design", "User Experience", "Problem Solving", "Information Architecture"],
     links: [
-      { text: "View Design", url: "#", type: "primary" },
-      { text: "Documentation", url: "#", type: "secondary" }
+      { text: "Project Overview", url: "https://github.com/aviralcodes29", type: "primary" },
+      { text: "GitHub Repo", url: "https://github.com/aviralcodes29", type: "secondary" }
     ]
   },
   "03": {
     title: "Personal Portfolio Website",
-    description: "This responsive personal portfolio website showcasing my skills, projects, and experience. Built with modern HTML5, CSS3, and vanilla JavaScript, it features smooth animations, a clean design, and full mobile responsiveness. The portfolio is designed to make a great first impression on potential employers and collaborators.",
+    description: "This responsive personal portfolio website showcasing my skills, projects, and experience. Built with modern HTML5, CSS3, and vanilla JavaScript, it features smooth animations, a clean design, and full mobile responsiveness. The portfolio is designed to make a great first impression on potential employers and collaborators. Includes light/dark theme toggle, interactive project modals, and optimized performance.",
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Animations"],
     links: [
       { text: "View Source", url: "https://github.com/aviralcodes29/Portfolio", type: "primary" },
@@ -82,7 +82,10 @@ const projectDetails = {
 function openProjectModal(projectId) {
   const project = projectDetails[projectId];
   
-  if (!project) return;
+  if (!project) {
+    console.error(`❌ Project ${projectId} not found in projectDetails`);
+    return;
+  }
   
   document.getElementById("modalProjectNumber").textContent = `Project ${projectId}`;
   document.getElementById("modalProjectTitle").textContent = project.title;
@@ -293,7 +296,7 @@ function handleHeaderScroll() {
 }
 
 // ===============================
-// Contact Form Validation
+// Contact Form Validation & Submission
 // ===============================
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -303,8 +306,9 @@ contactForm.addEventListener("submit", (e) => {
   const subject = document.getElementById("subject").value.trim();
   const message = document.getElementById("message").value.trim();
 
+  // Validation
   if (!name || !email || !subject || !message) {
-    formMessage.textContent = "Please fill in all fields.";
+    formMessage.textContent = "❌ Please fill in all fields.";
     formMessage.style.color = "#f87171";
     return;
   }
@@ -312,15 +316,42 @@ contactForm.addEventListener("submit", (e) => {
   const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
 
   if (!emailPattern.test(email)) {
-    formMessage.textContent = "Please enter a valid email address.";
+    formMessage.textContent = "❌ Please enter a valid email address.";
     formMessage.style.color = "#f87171";
     return;
   }
 
-  formMessage.textContent = "Message sent successfully! (Demo only)";
+  // If Formspree is configured, form will submit
+  // If not, show instructions
+  formMessage.textContent = "✅ Form ready! To send emails, integrate Formspree (see README).";
   formMessage.style.color = "#5eead4";
-  contactForm.reset();
+  
+  console.log("Form data:", { name, email, subject, message });
+  
+  // Reset form after 2 seconds
+  setTimeout(() => {
+    contactForm.reset();
+    formMessage.textContent = "";
+  }, 2000);
 });
+
+// ===============================
+// Resume Download with Validation
+// ===============================
+const resumeBtn = document.querySelector('a[download]');
+if (resumeBtn) {
+  resumeBtn.addEventListener("click", (e) => {
+    const resumePath = resumeBtn.getAttribute("href");
+    
+    // Check if resume file exists by attempting to fetch
+    fetch(resumePath, { method: "HEAD" })
+      .catch(() => {
+        e.preventDefault();
+        alert("⚠️ Resume file not found. Please add Aviral_Singh_Resume.pdf to the repository root.");
+        console.error(`Resume file not found at: ${resumePath}`);
+      });
+  });
+}
 
 // ===============================
 // Window Events
@@ -338,4 +369,10 @@ window.addEventListener("load", () => {
   setActiveLink();
   handleBackToTop();
   typeEffect();
+  
+  // Log initialization
+  console.log("✅ Portfolio loaded successfully!");
+  console.log("🌙 Theme toggle: Available");
+  console.log("📱 Project modal: Available");
+  console.log("📧 Contact form: Ready for Formspree integration");
 });
