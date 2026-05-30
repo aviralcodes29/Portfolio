@@ -1,5 +1,6 @@
 // ==========================================
 // Aviral Singh Portfolio JavaScript
+// Enhanced with Theme Toggle & Project Modal
 // ==========================================
 
 // Select elements
@@ -15,6 +16,121 @@ const projectCards = document.querySelectorAll(".project-card");
 const typingText = document.getElementById("typing-text");
 const contactForm = document.getElementById("contact-form");
 const formMessage = document.getElementById("form-message");
+const themeToggle = document.getElementById("theme-toggle");
+const projectModal = document.getElementById("projectModal");
+const modalClose = document.getElementById("modalClose");
+const projectViewButtons = document.querySelectorAll(".project-view-btn");
+
+// ===============================
+// Theme Toggle Feature
+// ===============================
+function initializeTheme() {
+  const savedTheme = localStorage.getItem("theme") || "dark";
+  
+  if (savedTheme === "light") {
+    document.body.classList.add("light-mode");
+    updateThemeIcon(true);
+  }
+}
+
+function updateThemeIcon(isLightMode) {
+  const icon = themeToggle.querySelector(".theme-icon");
+  icon.textContent = isLightMode ? "☀️" : "🌙";
+}
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+  const isLightMode = document.body.classList.contains("light-mode");
+  
+  localStorage.setItem("theme", isLightMode ? "light" : "dark");
+  updateThemeIcon(isLightMode);
+});
+
+// ===============================
+// Project Modal Feature
+// ===============================
+const projectDetails = {
+  "01": {
+    title: "Calculator Application",
+    description: "A fully functional calculator application that performs arithmetic operations including addition, subtraction, multiplication, and division. Built from scratch using vanilla JavaScript with a clean and intuitive user interface. The project helped me practice DOM manipulation, event handling, and state management.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "DOM API"],
+    links: [
+      { text: "View Code", url: "#", type: "primary" },
+      { text: "Live Demo", url: "#", type: "secondary" }
+    ]
+  },
+  "02": {
+    title: "Lost and Found Item Portal",
+    description: "A web-based portal concept for reporting and tracking lost items in a community or campus. This project demonstrates my ability to conceptualize user problems and design solutions. The portal allows users to post lost items, search for found items, and connect with finders through contact information.",
+    technologies: ["Web Design", "User Experience", "Problem Solving", "Information Architecture"],
+    links: [
+      { text: "View Design", url: "#", type: "primary" },
+      { text: "Documentation", url: "#", type: "secondary" }
+    ]
+  },
+  "03": {
+    title: "Personal Portfolio Website",
+    description: "This responsive personal portfolio website showcasing my skills, projects, and experience. Built with modern HTML5, CSS3, and vanilla JavaScript, it features smooth animations, a clean design, and full mobile responsiveness. The portfolio is designed to make a great first impression on potential employers and collaborators.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Animations"],
+    links: [
+      { text: "View Source", url: "https://github.com/aviralcodes29/Portfolio", type: "primary" },
+      { text: "Visit Live", url: "https://aviralcodes29.github.io/Portfolio/", type: "secondary" }
+    ]
+  }
+};
+
+function openProjectModal(projectId) {
+  const project = projectDetails[projectId];
+  
+  if (!project) return;
+  
+  document.getElementById("modalProjectNumber").textContent = `Project ${projectId}`;
+  document.getElementById("modalProjectTitle").textContent = project.title;
+  document.getElementById("modalProjectDescription").innerHTML = `<p>${project.description}</p>`;
+  
+  const techStackHTML = `
+    <h3>Technologies Used</h3>
+    <div class="tech-list">
+      ${project.technologies.map(tech => `<span class="tech-badge">${tech}</span>`).join('')}
+    </div>
+  `;
+  document.getElementById("modalTechStack").innerHTML = techStackHTML;
+  
+  const actionsHTML = project.links.map(link => 
+    `<a href="${link.url}" class="btn btn-${link.type}" target="_blank" rel="noopener noreferrer">${link.text}</a>`
+  ).join('');
+  document.getElementById("modalActions").innerHTML = actionsHTML;
+  
+  projectModal.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeProjectModal() {
+  projectModal.classList.remove("active");
+  document.body.style.overflow = "auto";
+}
+
+projectViewButtons.forEach(button => {
+  button.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const projectId = button.getAttribute("data-project");
+    openProjectModal(projectId);
+  });
+});
+
+modalClose.addEventListener("click", closeProjectModal);
+
+projectModal.addEventListener("click", (e) => {
+  if (e.target === projectModal) {
+    closeProjectModal();
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && projectModal.classList.contains("active")) {
+    closeProjectModal();
+  }
+});
 
 // ===============================
 // Mobile Menu
@@ -217,6 +333,7 @@ window.addEventListener("scroll", () => {
 });
 
 window.addEventListener("load", () => {
+  initializeTheme();
   revealOnScroll();
   setActiveLink();
   handleBackToTop();
