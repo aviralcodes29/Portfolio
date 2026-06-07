@@ -79,9 +79,9 @@ This is a personalized portfolio website for **Aviral Singh**, a B.Tech Computer
 
 ```
 aviral-portfolio/
-├── aviral-portfolio.html      # Main HTML file
-├── aviral-styles.css          # Stylesheet with animations
-├── aviral-script.js           # JavaScript interactions
+├── index.html      # Main HTML file
+├── styles-portfolio.css          # Stylesheet with animations
+├── script-portfolio.js           # JavaScript interactions
 ├── README.md                  # Project documentation
 ├── DEPLOY.md                  # Deployment guide
 └── BUG-FIXES.md               # Known issues and solutions
@@ -89,7 +89,7 @@ aviral-portfolio/
 
 ### File Descriptions
 
-#### `aviral-portfolio.html` (1000+ lines)
+#### `index.html` (1000+ lines)
 - Complete semantic HTML structure
 - Navigation with internal linking
 - Hero section with code visual
@@ -99,7 +99,7 @@ aviral-portfolio/
 - Contact form
 - Footer with social links
 
-#### `aviral-styles.css` (800+ lines)
+#### `styles-portfolio.cs` (800+ lines)
 - CSS custom properties (variables)
 - Dark mode color scheme
 - Glassmorphism and glow effects
@@ -108,7 +108,7 @@ aviral-portfolio/
 - Media queries for all breakpoints
 - Accessibility-friendly colors
 
-#### `aviral-script.js` (600+ lines)
+#### `script-portfolio.js` (600+ lines)
 - Mobile navigation toggle
 - Smooth scroll handling
 - Intersection Observer for animations
@@ -122,7 +122,7 @@ aviral-portfolio/
 
 ### Changing Colors
 
-Edit the CSS variables in `aviral-styles.css` (lines 1-15):
+Edit the CSS variables in `styles-portfolio.css` (lines 1-15):
 
 ```css
 :root {
@@ -137,7 +137,7 @@ Edit the CSS variables in `aviral-styles.css` (lines 1-15):
 
 ### Adding New Projects
 
-1. **Open** `aviral-portfolio.html`
+1. **Open** `index.html`
 2. **Find** the `<!-- Projects Section -->` comment
 3. **Copy** an existing project card:
 
@@ -331,5 +331,5 @@ This portfolio is open source and available under the [MIT License](./LICENSE).
 
 **Made with ❤️ and lots of coffee by Aviral Singh**
 
-Last Updated: 2024  
+Last Updated: 2026  
 Status: Active & Maintained
