@@ -26,7 +26,7 @@ This is a personalized portfolio website for **Aviral Singh**, a B.Tech Computer
 - Fully responsive design
 - Smooth animations and transitions
 
-**Live Demo:** [aviral-singh.github.io](https://aviralcodes29.github.io/)  
+**Live Demo:** [aviral-singh.github.io](https://aviralcodes29.github.io/portfolio/))  
 **GitHub Repository:** [github.com/Aviralcodes29](https://github.com/Aviralcodes29)  
 **LinkedIn Profile:** [linkedin.com/in/aviral-singh-a425a1379](https://www.linkedin.com/in/aviral-singh-a425a1379)
 
