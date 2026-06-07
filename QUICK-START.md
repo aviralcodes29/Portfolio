@@ -6,14 +6,14 @@ Get your portfolio live in **5 minutes!**
 
 ### Step 1: Download Files (30 seconds)
 Download these 3 files:
-- `aviral-portfolio.html`
-- `aviral-styles.css`
-- `aviral-script.js`
+- `index.html`
+- `styles-portfolio.js.css`
+- `script-portfolio.js`
 
 Save them in the **same folder**.
 
 ### Step 2: Test Locally (15 seconds)
-1. Double-click `aviral-portfolio.html`
+1. Double-click `index.html`
 2. Your portfolio opens in browser
 3. Test navigation and form
 4. ✅ Works perfectly!
@@ -26,7 +26,7 @@ Save them in the **same folder**.
 
 2. **Create Repository**
    - Click `+` → "New repository"
-   - Name: `aviralcodes29.github.io`
+   - Name: `portfolio`
    - Make it "Public"
    - Click "Create repository"
 
@@ -36,10 +36,9 @@ Save them in the **same folder**.
    - Click "Commit changes"
 
 4. **Rename HTML File**
-   - Click `aviral-portfolio.html`
+   - Click `index.html`
    - Click pencil icon to edit
-   - Change name to `index.html`
-   - Click "Commit changes"
+
 
 5. **Visit Your Portfolio**
    - Wait 1-2 minutes
@@ -73,13 +72,13 @@ Save them in the **same folder**.
 ## 🎯 Common Customizations
 
 ### Change Your Name
-Open `aviral-portfolio.html` in text editor:
+Open `index.html` in text editor:
 - Find: `Aviral Singh`
 - Replace with: `Your Name`
 - Save and re-deploy
 
 ### Change Colors
-Open `aviral-styles.css`, find top section:
+Open `styles-portfolio.js`, find top section:
 ```css
 :root {
     --accent-cyan: #00d4ff;     /* Change this color */
@@ -88,7 +87,7 @@ Open `aviral-styles.css`, find top section:
 ```
 
 ### Add New Project
-In `aviral-portfolio.html`, find Projects section:
+In `index.html`, find Projects section:
 ```html
 <div class="project-card">
     <div class="project-header">
