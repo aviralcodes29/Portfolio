@@ -27,13 +27,13 @@ You have received a **complete, production-ready portfolio** with:
 
 ### Core Portfolio Files (3 Files - REQUIRED)
 
-✅ **aviral-portfolio.html** (~45 KB)
+✅ **index.html** (~45 KB)
 - Main HTML file with all content
 - Navigation, hero, about, projects, skills, contact, footer
 - Includes your name, bio, 5 projects, contact info, links
 - Ready to customize and deploy
 
-✅ **aviral-styles.css** (~50 KB)
+✅ **styles-portfolio.js** (~50 KB)
 - Complete dark mode stylesheet
 - CSS variables for easy color changes
 - Glassmorphism effects
@@ -41,7 +41,7 @@ You have received a **complete, production-ready portfolio** with:
 - Responsive media queries
 - Accessibility-friendly contrast
 
-✅ **aviral-script.js** (~25 KB)
+✅ **script-portfolio.js** (~25 KB)
 - Interactive functionality (vanilla JavaScript)
 - Mobile menu toggle
 - Smooth scrolling
@@ -218,7 +218,7 @@ Before going live, verify:
 
 ### Change Colors
 ```
-File: aviral-styles.css
+File: styles-portfolio.js
 Line: 1-15 (CSS variables section)
 Change: --accent-cyan, --accent-purple, --accent-pink
 Test: Refresh browser to see changes
@@ -226,7 +226,7 @@ Test: Refresh browser to see changes
 
 ### Change Your Name
 ```
-File: aviral-portfolio.html
+File: index.html
 Search: "Aviral Singh"
 Replace: "Your Name"
 Save & refresh browser
@@ -234,7 +234,7 @@ Save & refresh browser
 
 ### Add New Project
 ```
-File: aviral-portfolio.html
+File: index.html
 Find: Project cards section
 Copy: One project card
 Update: Title, description, tech, link
@@ -243,7 +243,7 @@ Save & refresh browser
 
 ### Update Skills
 ```
-File: aviral-portfolio.html
+File: index.html
 Find: Skills section
 Update: Skill names and percentages
 Save & refresh browser
@@ -251,7 +251,7 @@ Save & refresh browser
 
 ### Change About Section
 ```
-File: aviral-portfolio.html
+File: index.html
 Find: About section
 Update: Bio paragraphs
 Save & refresh browser
@@ -529,7 +529,7 @@ You now have a complete, professional portfolio!
 
 **Package Version:** 1.0.0  
 **Status:** Production Ready  
-**Last Updated:** 2024  
+**Last Updated:** 2026  
 **Created by:** Aviral Singh  
 **Maintained at:** https://github.com/Aviralcodes29
 
