@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviral Singh - Frontend Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-portfolio.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    <div class="grid-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="code-bracket">&lt;</span>Aviral<span class="code-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">home</a></li>
+                <li><a href="#about" class="nav-link">about</a></li>
+                <li><a href="#projects" class="nav-link">projects</a></li>
+                <li><a href="#skills" class="nav-link">skills</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-label">welcome to my digital space</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Frontend</span> Developer
+                <br>
+                <span class="neon-text">&amp; Problem Solver</span>
+            </h1>
+            <p class="hero-subtitle">Building responsive, user-friendly web applications with React, JavaScript & modern web technologies</p>
+            <div class="hero-ctas">
+                <a href="#projects" class="cta-button primary">View My Work</a>
+                <a href="#contact" class="cta-button secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="window-content">
+                    <span class="code-line"><span class="keyword">const</span> <span class="variable">developer</span> <span class="operator">=</span> {</span>
+                    <span class="code-line indent-1"><span class="property">name:</span> <span class="string">"Aviral Singh"</span>,</span>
+                    <span class="code-line indent-1"><span class="property">passion:</span> <span class="string">"Frontend Development"</span>,</span>
+                    <span class="code-line indent-1"><span class="property">status:</span> <span class="string">"Learning & Growing"</span></span>
+                    <span class="code-line">}</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a <span class="highlight">B.Tech Computer Science Engineering student</span> specializing in AI & ML with a strong passion for <span class="highlight">Frontend Development</span> and modern web technologies.</p>
+                    <p>I enjoy building <span class="highlight">responsive, user-friendly web applications</span> that solve real-world problems through technology. My journey in development is driven by curiosity, continuous learning, and a commitment to writing clean, efficient code.</p>
+                    <p>Currently focused on mastering <span class="highlight">React, JavaScript ES6+</span>, and modern development practices through hands-on projects and internships.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">0-1</div>
+                        <div class="stat-label">Years Experience</div>
+                        <div class="stat-desc">Fresher with strong foundation</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Projects Built</div>
+                        <div class="stat-desc">Production-ready applications</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Always Learning</div>
+                        <div class="stat-desc">New tech & best practices</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Student Grade Management System</h3>
+                        <span class="project-icon">📊</span>
+                    </div>
+                    <p class="project-desc">A responsive web application for managing student records, calculating grades, tracking academic performance, and analyzing class statistics with search, sorting, and filtering.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">LocalStorage</span>
+                    </div>
+                    <a href="https://aviralcodes29.github.io/student-grade-management-system/" target="_blank" class="project-link">
+                        Live Demo <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>StudyMate – Responsive Student Planner</h3>
+                        <span class="project-icon">📚</span>
+                    </div>
+                    <p class="project-desc">A productivity application helping students manage study schedules, assignments, deadlines, and daily tasks with dark mode, task filtering, and progress tracking.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">LocalStorage</span>
+                    </div>
+                    <a href="https://github.com/Aviralcodes29/studymate-responsive-planner" target="_blank" class="project-link">
+                        View on GitHub <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Expense Tracker</h3>
+                        <span class="project-icon">💰</span>
+                    </div>
+                    <p class="project-desc">A modern personal finance management web app for tracking income/expenses, categorizing transactions, monitoring balances, and analyzing spending patterns with dark mode.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript ES6+</span>
+                        <span class="tech-tag">LocalStorage</span>
+                    </div>
+                    <a href="https://aviralcodes29.github.io/expense-tracker/" target="_blank" class="project-link">
+                        Live Demo <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Responsive Pricing Cards</h3>
+                        <span class="project-icon">💳</span>
+                    </div>
+                    <p class="project-desc">A responsive multi-page pricing website showcasing modern UI/UX design principles, flexible layouts, and interactive experiences across all devices.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">CSS Grid</span>
+                        <span class="tech-tag">Flexbox</span>
+                    </div>
+                    <a href="https://github.com/Aviralcodes29/responsive-pricing-cards" target="_blank" class="project-link">
+                        View on GitHub <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Web Password Generator</h3>
+                        <span class="project-icon">🔐</span>
+                    </div>
+                    <p class="project-desc">A secure password generation tool with customizable length, symbols, numbers, and character combinations. Includes copy-to-clipboard and strength indicators.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/Aviralcodes29/web-password-generator" target="_blank" class="project-link">
+                        View on GitHub <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3 & Tailwind</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Tools & Platforms</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Chrome DevTools</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Web APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Core Concepts</h3>
+                    <div class="skill-badges">
+                        <span class="badge">DOM Manipulation</span>
+                        <span class="badge">Event Handling</span>
+                        <span class="badge">Async JavaScript</span>
+                        <span class="badge">State Management</span>
+                        <span class="badge">Component Design</span>
+                        <span class="badge">Web Performance</span>
+                        <span class="badge">SEO Basics</span>
+                        <span class="badge">A11y Standards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>I'm always open to discussing new projects, internship opportunities, or just having a chat about web development.</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/Aviralcodes29" class="contact-link" target="_blank">
+                            <span class="icon">💻</span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aviral-singh-a425a1379" class="contact-link" target="_blank">
+                            <span class="icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:aviral2529@gmail.com" class="contact-link">
+                            <span class="icon">✉️</span>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Your message..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Aviral Singh. Crafted with <span class="heart">❤️</span> and lots of coffee.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Aviralcodes29" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/aviral-singh-a425a1379" target="_blank">LinkedIn</a>
+                    <a href="mailto:aviral2529@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <script src="script-portfolio.js"></script>
+</body>
+</html>
