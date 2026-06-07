@@ -455,5 +455,5 @@ Your portfolio is now live! 🎉
 
 ---
 
-*Last Updated: 2024*  
+*Last Updated: 2026*  
 *Status: Ready for Production*
