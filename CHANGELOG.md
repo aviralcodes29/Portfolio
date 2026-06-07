@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
-## [1.0.0] - 2024 (Current Release)
+## [1.0.0] - 2026 (Current Release)
 
 ### ✨ Added
 
@@ -407,7 +407,7 @@ Feel free to:
 
 ---
 
-**Last Updated**: 2024  
+**Last Updated**: 2026  
 **Current Version**: 1.0.0  
 **Status**: Active Development  
 **Maintainer**: Aviral Singh
