@@ -670,7 +670,7 @@ When reporting, include:
 
 ## 📝 Version History
 
-**v1.0.0** (Current - 2024)
+**v1.0.0** (Current - 2026)
 - Initial release
 - All known issues documented
 - Performance optimized
@@ -678,11 +678,11 @@ When reporting, include:
 
 ---
 
-**Last Updated:** 2024  
+**Last Updated:** 2026  
 **Maintained By:** Aviral Singh  
 **Status:** Active & Monitored
 
-For latest updates, check: https://github.com/Aviralcodes29
+For latest updates, check: https://github.com/aviralcodes29/portfolio/
 
 ---
 
