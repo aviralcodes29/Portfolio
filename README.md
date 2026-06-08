@@ -75,17 +75,24 @@ This is a personalized portfolio website for **Aviral Singh**, a B.Tech Computer
 - **GitHub Pages** - Free static site hosting
 - **VS Code** - Development environment
 
-## 📂 Project Structure
+## 📁 Project Structure
 
+```text
+portfolio/
+│
+├── BUG-FIXES.md            # Bug fixes and resolved issues
+├── CHANGELOG.md            # Project update history
+├── DEPLOY.md               # Deployment instructions
+├── INDEX.md                # Project index/documentation
+├── PACKAGE-MANIFEST.md     # Project metadata and package details
+├── QUICK-START.md          # Quick setup guide
+├── README.md               # Main project documentation
+│
+├── index.html              # Main portfolio webpage
+├── styles-portfolio.css    # Portfolio styling
+└── script-portfolio.js     # Portfolio functionality
 ```
-aviral-portfolio/
-├── index.html      # Main HTML file
-├── styles-portfolio.css          # Stylesheet with animations
-├── script-portfolio.js           # JavaScript interactions
-├── README.md                  # Project documentation
-├── DEPLOY.md                  # Deployment guide
-└── BUG-FIXES.md               # Known issues and solutions
-```
+
 
 ### File Descriptions
 
