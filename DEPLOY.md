@@ -4,14 +4,14 @@ Complete guide for deploying Aviral Singh's portfolio to various platforms.
 
 ## 📋 Table of Contents
 
-- [GitHub Pages](#github-pages) ⭐ (Recommended)
-- [Netlify](#netlify)
-- [Vercel](#vercel)
-- [Custom Domain Setup](#custom-domain-setup)
-- [SSL Certificate](#ssl-certificate)
-- [Continuous Deployment](#continuous-deployment)
-- [Troubleshooting](#troubleshooting)
-- [Performance Optimization](#performance-optimization)
+- [GitHub Pages](https://github.com/aviralcodes29/portfolio/edit/main/DEPLOY.md#-github-pages-recommended---free) ⭐ (Recommended)
+- [Netlify](https://github.com/aviralcodes29/portfolio/edit/main/DEPLOY.md#-netlify-alternative---free)
+- [Vercel](https://github.com/aviralcodes29/portfolio/edit/main/DEPLOY.md#-vercel-alternative---free)
+- [Custom Domain Setup](https://github.com/aviralcodes29/portfolio/edit/main/DEPLOY.md#-custom-domain-setup)
+- [SSL Certificate](https://github.com/aviralcodes29/portfolio/edit/main/DEPLOY.md#-ssl-certificate)
+- [Continuous Deployment](https://github.com/aviralcodes29/portfolio/edit/main/DEPLOY.md#-continuous-deployment)
+- [Troubleshooting](https://github.com/aviralcodes29/portfolio/edit/main/DEPLOY.md#-troubleshooting)
+- [Performance Optimization](https://github.com/aviralcodes29/portfolio/edit/main/DEPLOY.md#-performance-optimization)
 
 ---
 
@@ -33,7 +33,7 @@ GitHub Pages is the **easiest and most cost-effective** option for hosting your 
 
 2. **Create a new repository**
    - Click `+` icon → "New repository"
-   - Name it: `aviralcodes29.github.io`
+   - Name it: `username.github.io`
    - Description: "Portfolio website"
    - Make it **Public**
    - Click "Create repository"
@@ -41,32 +41,27 @@ GitHub Pages is the **easiest and most cost-effective** option for hosting your 
 3. **Upload your files**
    - Click "uploading an existing file"
    - Drag and drop your three files:
-     - `aviral-portfolio.html`
-     - `aviral-styles.css`
-     - `aviral-script.js`
+     - `index.html`
+     - `styles.css`
+     - `script.js`
    - Click "Commit changes"
 
-4. **Rename HTML file**
-   - Click on `aviral-portfolio.html`
-   - Click the pencil icon to edit
-   - At the top, rename to `index.html`
-   - Scroll down and click "Commit changes"
 
-5. **View your portfolio**
+4. **View your portfolio**
    - Wait 1-2 minutes for GitHub to build
-   - Visit: `https://aviralcodes29.github.io`
+   - Visit: `https://username.github.io`
    - Your portfolio is now live! 🎉
 
 #### Option 2: Using Git Command Line (Advanced)
 
 ```bash
 # 1. Create a local folder
-mkdir aviral-portfolio
-cd aviral-portfolio
+mkdir portfolio
+cd portfolio
 
 # 2. Initialize Git
 git init
-git remote add origin https://github.com/aviralcodes29/aviralcodes29.github.io.git
+git remote add origin https://github.com/username/username.github.io.git
 
 # 3. Add files
 # Copy your three files into this folder, then:
@@ -79,7 +74,7 @@ git commit -m "Initial portfolio setup"
 git branch -M main
 git push -u origin main
 
-# Done! Visit https://aviralcodes29.github.io
+# Done! Visit https://username.github.io
 ```
 
 ### GitHub Pages Settings
@@ -177,7 +172,7 @@ Vercel specializes in fast, modern deployments.
    - Bluehost
 
 2. **Register your domain**
-   - Example: `aviralsingh.com`
+   - Example: `yourname.com`
    - Cost: $5-15/year
 
 ### Connect Domain to GitHub Pages
@@ -197,7 +192,7 @@ Vercel specializes in fast, modern deployments.
 4. **Add CNAME record** (for `www`):
    ```
    Host: www
-   Points to: aviralcodes29.github.io
+   Points to: username.github.io
    ```
 
 5. **Go to GitHub repo Settings → Pages**
@@ -267,8 +262,8 @@ Vercel specializes in fast, modern deployments.
 - Ensure CSS/JS files are in same folder as HTML
 - Check file names match exactly in HTML:
   ```html
-  <link rel="stylesheet" href="aviral-styles.css">
-  <script src="aviral-script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
   ```
 
 ### Issue: Forms Not Working
@@ -446,10 +441,10 @@ Your portfolio is now live! 🎉
 ---
 
 **Quick Links:**
-- 🌐 Live Site: `https://aviralcodes29.github.io`
-- 📧 Email: `aviral2529@gmail.com`
-- 🔗 GitHub: `https://github.com/Aviralcodes29`
-- 💼 LinkedIn: `https://www.linkedin.com/in/aviral-singh-a425a1379`
+- 🌐 Live Site: `https://username.github.io`
+- 📧 Email: `username@gmail.com`
+- 🔗 GitHub: `https://github.com/username`
+- 💼 LinkedIn: `https://www.linkedin.com/in/username`
 
 **Questions?** Check BUG-FIXES.md or create an issue on GitHub!
 
