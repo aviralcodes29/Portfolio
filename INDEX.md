@@ -22,9 +22,9 @@
 
 | File | Size | Purpose |
 |------|------|---------|
-| **aviral-portfolio.html** | ~45 KB | Main HTML with all content |
-| **aviral-styles.css** | ~50 KB | Dark mode styling & animations |
-| **aviral-script.js** | ~25 KB | Interactive functionality |
+| **index.html** | ~45 KB | Main HTML with all content |
+| **styles-portfolio.css** | ~50 KB | Dark mode styling & animations |
+| **script-portfolio.js** | ~25 KB | Interactive functionality |
 
 **Total Size:** ~120 KB (Very lightweight!)
 
@@ -103,9 +103,9 @@
 complete-portfolio-package/
 │
 ├── 🎨 PORTFOLIO CORE
-│   ├── aviral-portfolio.html      ← START HERE
-│   ├── aviral-styles.css          ← Required
-│   └── aviral-script.js           ← Required
+│   ├── index.html                    ← START HERE
+│   ├── styles-portfolio.css          ← Required
+│   └── script-portfolio.js           ← Required
 │
 ├── 📚 DOCUMENTATION
 │   ├── QUICK-START.md             ← Read first (5 min)
@@ -162,7 +162,7 @@ complete-portfolio-package/
 
 ## 📋 Complete File Guide
 
-### aviral-portfolio.html
+### index.html
 **What it is:** Main HTML file containing all portfolio content
 
 **Key sections:**
@@ -184,7 +184,7 @@ complete-portfolio-package/
 
 ---
 
-### aviral-styles.css
+### styles-portfolio.css
 **What it is:** Complete stylesheet with dark mode theme
 
 **Key features:**
@@ -205,7 +205,7 @@ complete-portfolio-package/
 
 ---
 
-### aviral-script.js
+### script-portfolio.js
 **What it is:** Interactive functionality using vanilla JavaScript
 
 **Key features:**
@@ -420,8 +420,8 @@ Before making your portfolio live:
 ## 🔗 Quick Links
 
 ### Your Portfolio
-- **Live Portfolio:** https://aviralcodes29.github.io
-- **GitHub Repository:** https://github.com/Aviralcodes29
+- **Live Portfolio:** https://aviralcodes29.github.io/portfolio/
+- **GitHub Repository:** https://aviralcodes29.github.io/portfolio
 - **GitHub Profile:** https://github.com/Aviralcodes29
 - **LinkedIn Profile:** https://www.linkedin.com/in/aviral-singh-a425a1379
 - **Email:** aviral2529@gmail.com
