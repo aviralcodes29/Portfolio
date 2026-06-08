@@ -421,7 +421,7 @@ Before making your portfolio live:
 
 ### Your Portfolio
 - **Live Portfolio:** https://aviralcodes29.github.io/portfolio/
-- **GitHub Repository:** https://aviralcodes29.github.io/portfolio
+- **GitHub Repository:** https://github.com/aviralcodes29/portfolio
 - **GitHub Profile:** https://github.com/Aviralcodes29
 - **LinkedIn Profile:** https://www.linkedin.com/in/aviral-singh-a425a1379
 - **Email:** aviral2529@gmail.com
