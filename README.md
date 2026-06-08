@@ -4,15 +4,15 @@
 
 ## 📋 Table of Contents
 
-- [Overview]([#overview](https://github.com/aviralcodes29/portfolio#-overview))
-- [Features]([#features](https://github.com/aviralcodes29/portfolio#-features))
-- [Tech Stack]([#tech-stack](https://github.com/aviralcodes29/portfolio#%EF%B8%8F-tech-stack))
-- [Project Structure]([#project-structure](https://github.com/aviralcodes29/portfolio#-project-structure))
-- [Customization Guide]([#customization-guide](https://github.com/aviralcodes29/portfolio#-customization-guide))
-- [Browser Support]([#browser-support](https://github.com/aviralcodes29/portfolio#-browser-support))
-- [Performance]([#performance](https://github.com/aviralcodes29/portfolio#-performance-metrics))
-- [Accessibility]([#accessibility](https://github.com/aviralcodes29/portfolio#-accessibility))
-- [License]([#license](https://github.com/aviralcodes29/portfolio#-license))
+- [Overview](https://github.com/aviralcodes29/portfolio#-overview)
+- [Features](https://github.com/aviralcodes29/portfolio#-features)
+- [Tech Stack](https://github.com/aviralcodes29/portfolio#%EF%B8%8F-tech-stack)
+- [Project Structure](https://github.com/aviralcodes29/portfolio#-project-structure)
+- [Customization Guide](https://github.com/aviralcodes29/portfolio#-customization-guide)
+- [Browser Support](https://github.com/aviralcodes29/portfolio#-browser-support)
+- [Performance](https://github.com/aviralcodes29/portfolio#-performance-metrics)
+- [Accessibility](https://github.com/aviralcodes29/portfolio#-accessibility)
+- [License](https://github.com/aviralcodes29/portfolio#-license)
 
 ## 🎯 Overview
 
