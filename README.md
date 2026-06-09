@@ -106,7 +106,7 @@ portfolio/
 - Contact form
 - Footer with social links
 
-#### `styles-portfolio.cs` (800+ lines)
+#### `styles-portfolio.css` (800+ lines)
 - CSS custom properties (variables)
 - Dark mode color scheme
 - Glassmorphism and glow effects
